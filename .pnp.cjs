@@ -28,11 +28,102 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@biomejs/biome", "npm:2.3.10"],\
           ["@rsbuild/core", "npm:1.6.14"],\
           ["@rsbuild/plugin-less", "virtual:2930b78aa5ae305286582e3c93e89f5bd6f0dbcdb8c6ffc4283bd51da72053c0d8a222efe09229a82a0af7fa701974c1a8f647ab5eece5cbf0d8f62be7a9b103#npm:1.5.0"],\
+          ["lefthook", "npm:2.0.12"],\
           ["social-links-profile", "workspace:."]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@biomejs/biome", [\
+      ["npm:2.3.10", {\
+        "packageLocation": "../../../.yarn/berry/cache/@biomejs-biome-npm-2.3.10-bebc22cc8f-10c0.zip/node_modules/@biomejs/biome/",\
+        "packageDependencies": [\
+          ["@biomejs/biome", "npm:2.3.10"],\
+          ["@biomejs/cli-darwin-arm64", "npm:2.3.10"],\
+          ["@biomejs/cli-darwin-x64", "npm:2.3.10"],\
+          ["@biomejs/cli-linux-arm64", "npm:2.3.10"],\
+          ["@biomejs/cli-linux-arm64-musl", "npm:2.3.10"],\
+          ["@biomejs/cli-linux-x64", "npm:2.3.10"],\
+          ["@biomejs/cli-linux-x64-musl", "npm:2.3.10"],\
+          ["@biomejs/cli-win32-arm64", "npm:2.3.10"],\
+          ["@biomejs/cli-win32-x64", "npm:2.3.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@biomejs/cli-darwin-arm64", [\
+      ["npm:2.3.10", {\
+        "packageLocation": "./.yarn/unplugged/@biomejs-cli-darwin-arm64-npm-2.3.10-d689639638/node_modules/@biomejs/cli-darwin-arm64/",\
+        "packageDependencies": [\
+          ["@biomejs/cli-darwin-arm64", "npm:2.3.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@biomejs/cli-darwin-x64", [\
+      ["npm:2.3.10", {\
+        "packageLocation": "./.yarn/unplugged/@biomejs-cli-darwin-x64-npm-2.3.10-1dc5f0363a/node_modules/@biomejs/cli-darwin-x64/",\
+        "packageDependencies": [\
+          ["@biomejs/cli-darwin-x64", "npm:2.3.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@biomejs/cli-linux-arm64", [\
+      ["npm:2.3.10", {\
+        "packageLocation": "./.yarn/unplugged/@biomejs-cli-linux-arm64-npm-2.3.10-31720c415a/node_modules/@biomejs/cli-linux-arm64/",\
+        "packageDependencies": [\
+          ["@biomejs/cli-linux-arm64", "npm:2.3.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@biomejs/cli-linux-arm64-musl", [\
+      ["npm:2.3.10", {\
+        "packageLocation": "./.yarn/unplugged/@biomejs-cli-linux-arm64-musl-npm-2.3.10-1eff48ad2e/node_modules/@biomejs/cli-linux-arm64-musl/",\
+        "packageDependencies": [\
+          ["@biomejs/cli-linux-arm64-musl", "npm:2.3.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@biomejs/cli-linux-x64", [\
+      ["npm:2.3.10", {\
+        "packageLocation": "./.yarn/unplugged/@biomejs-cli-linux-x64-npm-2.3.10-4227eefb46/node_modules/@biomejs/cli-linux-x64/",\
+        "packageDependencies": [\
+          ["@biomejs/cli-linux-x64", "npm:2.3.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@biomejs/cli-linux-x64-musl", [\
+      ["npm:2.3.10", {\
+        "packageLocation": "./.yarn/unplugged/@biomejs-cli-linux-x64-musl-npm-2.3.10-8d9ca8e412/node_modules/@biomejs/cli-linux-x64-musl/",\
+        "packageDependencies": [\
+          ["@biomejs/cli-linux-x64-musl", "npm:2.3.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@biomejs/cli-win32-arm64", [\
+      ["npm:2.3.10", {\
+        "packageLocation": "./.yarn/unplugged/@biomejs-cli-win32-arm64-npm-2.3.10-1e4a03e222/node_modules/@biomejs/cli-win32-arm64/",\
+        "packageDependencies": [\
+          ["@biomejs/cli-win32-arm64", "npm:2.3.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@biomejs/cli-win32-x64", [\
+      ["npm:2.3.10", {\
+        "packageLocation": "./.yarn/unplugged/@biomejs-cli-win32-x64-npm-2.3.10-27238e42c3/node_modules/@biomejs/cli-win32-x64/",\
+        "packageDependencies": [\
+          ["@biomejs/cli-win32-x64", "npm:2.3.10"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@emnapi/core", [\
@@ -370,6 +461,115 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["lefthook", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-npm-2.0.12-e17a3cd796/node_modules/lefthook/",\
+        "packageDependencies": [\
+          ["lefthook", "npm:2.0.12"],\
+          ["lefthook-darwin-arm64", "npm:2.0.12"],\
+          ["lefthook-darwin-x64", "npm:2.0.12"],\
+          ["lefthook-freebsd-arm64", "npm:2.0.12"],\
+          ["lefthook-freebsd-x64", "npm:2.0.12"],\
+          ["lefthook-linux-arm64", "npm:2.0.12"],\
+          ["lefthook-linux-x64", "npm:2.0.12"],\
+          ["lefthook-openbsd-arm64", "npm:2.0.12"],\
+          ["lefthook-openbsd-x64", "npm:2.0.12"],\
+          ["lefthook-windows-arm64", "npm:2.0.12"],\
+          ["lefthook-windows-x64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-darwin-arm64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-darwin-arm64-npm-2.0.12-b8dcfab4b3/node_modules/lefthook-darwin-arm64/",\
+        "packageDependencies": [\
+          ["lefthook-darwin-arm64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-darwin-x64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-darwin-x64-npm-2.0.12-483153b7e9/node_modules/lefthook-darwin-x64/",\
+        "packageDependencies": [\
+          ["lefthook-darwin-x64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-freebsd-arm64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-freebsd-arm64-npm-2.0.12-8da2e402fc/node_modules/lefthook-freebsd-arm64/",\
+        "packageDependencies": [\
+          ["lefthook-freebsd-arm64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-freebsd-x64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-freebsd-x64-npm-2.0.12-3233abd819/node_modules/lefthook-freebsd-x64/",\
+        "packageDependencies": [\
+          ["lefthook-freebsd-x64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-linux-arm64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-linux-arm64-npm-2.0.12-84c3de6fea/node_modules/lefthook-linux-arm64/",\
+        "packageDependencies": [\
+          ["lefthook-linux-arm64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-linux-x64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-linux-x64-npm-2.0.12-36d949dc11/node_modules/lefthook-linux-x64/",\
+        "packageDependencies": [\
+          ["lefthook-linux-x64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-openbsd-arm64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-openbsd-arm64-npm-2.0.12-ff14d43a83/node_modules/lefthook-openbsd-arm64/",\
+        "packageDependencies": [\
+          ["lefthook-openbsd-arm64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-openbsd-x64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-openbsd-x64-npm-2.0.12-6e3808d805/node_modules/lefthook-openbsd-x64/",\
+        "packageDependencies": [\
+          ["lefthook-openbsd-x64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-windows-arm64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-windows-arm64-npm-2.0.12-21f81a0895/node_modules/lefthook-windows-arm64/",\
+        "packageDependencies": [\
+          ["lefthook-windows-arm64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lefthook-windows-x64", [\
+      ["npm:2.0.12", {\
+        "packageLocation": "./.yarn/unplugged/lefthook-windows-x64-npm-2.0.12-a867d4cea3/node_modules/lefthook-windows-x64/",\
+        "packageDependencies": [\
+          ["lefthook-windows-x64", "npm:2.0.12"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["reduce-configs", [\
       ["npm:1.1.1", {\
         "packageLocation": "../../../.yarn/berry/cache/reduce-configs-npm-1.1.1-651777e6d9-10c0.zip/node_modules/reduce-configs/",\
@@ -383,8 +583,10 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@biomejs/biome", "npm:2.3.10"],\
           ["@rsbuild/core", "npm:1.6.14"],\
           ["@rsbuild/plugin-less", "virtual:2930b78aa5ae305286582e3c93e89f5bd6f0dbcdb8c6ffc4283bd51da72053c0d8a222efe09229a82a0af7fa701974c1a8f647ab5eece5cbf0d8f62be7a9b103#npm:1.5.0"],\
+          ["lefthook", "npm:2.0.12"],\
           ["social-links-profile", "workspace:."]\
         ],\
         "linkType": "SOFT"\
