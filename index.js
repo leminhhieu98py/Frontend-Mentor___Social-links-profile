@@ -1,3 +1,3 @@
-import "./style.less";
+import "./styles/main.less";
 
 console.log("Otis hello world");

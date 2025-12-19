@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "InterBold";
+  src: url("../../assets/fonts/static/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterRegular";
+  src: url("../../assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+.base-text {
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.text-preset-1 {
+  font-family: "InterBold", sans-serif;
+  font-size: 24px;
+
+  &:extend(.base-text);
+}
+
+.text-preset-2 {
+  font-family: "InterRegular", sans-serif;
+  font-size: 14px;
+
+  &:extend(.base-text);
+}
+
+.text-preset-2-bold {
+  font-family: "InterBold", sans-serif;
+  font-size: 14px;
+
+  &:extend(.base-text);
+}

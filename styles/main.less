@@ -1,0 +1,26 @@
+@import "./core/reset.less";
+@import "./core/variables.less";
+@import "./core/presets.less";
+
+.primary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 304px;
+  height: 45px;
+  gap: @spacing-100;
+  padding: @spacing-150;
+  border-radius: @spacing-100;
+  background-color: @grey-700;
+  color: @white;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  border: none;
+
+  &:extend(.text-preset-2-bold);
+
+  &:hover {
+    background-color: @green;
+    color: @grey-700;
+  }
+}
