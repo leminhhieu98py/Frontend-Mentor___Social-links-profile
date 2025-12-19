@@ -12,6 +12,7 @@ export default defineConfig({
   },
   html: {
     template: "./index.html",
+    favicon: "./assets/images/favicon-32x32.png",
   },
   plugins: [pluginLess()],
 });
