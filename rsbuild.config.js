@@ -9,6 +9,9 @@ export default defineConfig({
   },
   server: {
     port: 7979,
+    publicDir: {
+      name: "./assets",
+    },
   },
   html: {
     template: "./index.html",

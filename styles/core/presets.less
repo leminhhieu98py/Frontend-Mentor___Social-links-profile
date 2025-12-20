@@ -11,6 +11,7 @@
 .base-text {
   line-height: 1.5;
   letter-spacing: 0;
+  text-decoration: none;
 }
 
 .text-preset-1 {
@@ -32,4 +33,24 @@
   font-size: 14px;
 
   &:extend(.base-text);
+}
+
+.text-white {
+  color: @white;
+}
+
+.text-green {
+  color: @green;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-center {
+  flex-direction: column;
+
+  &:extend(.flex-center);
 }
