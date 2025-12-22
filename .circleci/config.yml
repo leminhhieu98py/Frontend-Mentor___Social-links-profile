@@ -1,5 +1,6 @@
 version: 2.1
-
+orbs:
+  node: circleci/node@7.2.1
 jobs:
   build:
     docker:
@@ -10,7 +11,7 @@ jobs:
           node-version: "24.11.1"
           install-yarn: true
       - run:
-          commmand: node -v
+          command: node --version
           name: Check Node Version
       - run:
           command: yarn -v
@@ -26,6 +27,6 @@ jobs:
           paths: .
 
 workflows:
-  hello-world-workflow:
+  build-and-deploy-workflow:
     jobs:
       - build
