@@ -10,17 +10,16 @@ export default defineConfig({
     },
   },
   output: {
-    assetPrefix: isProd ? "./" : "/",
+    assetPrefix: isProd
+      ? "https://leminhhieu98py.github.io/Frontend-Mentor___Social-links-profile"
+      : "/",
   },
   server: {
     port: 7979,
-    publicDir: {
-      name: "./assets",
-    },
   },
   html: {
-    template: "./index.html",
-    favicon: "./assets/images/favicon-32x32.png",
+    template: "index.html",
+    favicon: "public/images/favicon-32x32.png",
   },
   plugins: [pluginLess()],
 });
