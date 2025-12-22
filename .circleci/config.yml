@@ -1,14 +1,31 @@
 version: 2.1
 
 jobs:
-  hello-otis:
+  build:
     docker:
-      - image: cimg/node:24.11.1
+      - image: cimg/base:stable
     steps:
       - checkout
-      - run: echo "Hello, Otis!"
+      - node/install:
+          node-version: "24.11.1"
+          install-yarn: true
+      - run:
+          commmand: node -v
+          name: Check Node Version
+      - run:
+          command: yarn -v
+          name: Check Yarn Version
+      - run:
+          command: yarn
+          name: Install Dependencies
+      - run:
+          command: yarn build
+          name: Build Project
+      - persist_to_workspace:
+          root: ~/project
+          paths: .
 
 workflows:
   hello-world-workflow:
     jobs:
-      - hello-otis
+      - build
