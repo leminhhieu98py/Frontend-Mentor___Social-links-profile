@@ -1,7 +1,6 @@
 version: 2.1
 orbs:
   node: circleci/node@7.2.1
-  github-pages-orb: fernfernfern/github-pages-orb@0.0.10
 jobs:
   build:
     docker:
@@ -30,12 +29,24 @@ jobs:
           root: ~/project
           paths: .
   deploy:
-    executor: github-pages-orb/default
+    docker:
+      - image: cimg/base:stable
     steps:
       - attach_workspace:
           at: ~/project
-      - github-pages-orb/deploy:
-          build-dir: dist
+      - run:
+          name: Deploy to GitHub Pages
+          command: |
+            git config --global user.email "circleci@example.com"
+            git config --global user.name "CircleCI Job"
+
+            cd dist
+            
+            git init
+            git add .
+            git commit -m "Deploy from CircleCI"
+            
+            git push --force https://${GITHUB_TOKEN}@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.git main:gh-pages
 
 workflows:
   build-and-deploy-workflow:
