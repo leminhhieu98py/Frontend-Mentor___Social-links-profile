@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  hello-otis:
+    docker:
+      - image: cimg/node:24.11.1
+    steps:
+      - checkout
+      - run: echo "Hello, Otis!"
+
+workflows:
+  hello-world-workflow:
+    jobs:
+      - hello-otis
