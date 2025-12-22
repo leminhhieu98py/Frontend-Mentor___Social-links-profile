@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@7.2.1
+  github-pages-orb: fernfernfern/github-pages-orb@0.0.10
 jobs:
   build:
     docker:
@@ -28,8 +29,21 @@ jobs:
       - persist_to_workspace:
           root: ~/project
           paths: .
+  deploy:
+    executor: github-pages-orb/default
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - github-pages-orb/deploy:
+          build-dir: dist
 
 workflows:
   build-and-deploy-workflow:
     jobs:
       - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: main
