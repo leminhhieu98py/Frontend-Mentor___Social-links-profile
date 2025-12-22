@@ -42,9 +42,10 @@ jobs:
 
             cd dist
             
+            git config --global init.defaultBranch main
             git init
             git add .
-            git commit -m "Deploy from CircleCI"
+            git commit -m "Deploy from CircleCI [skip ci]"
             
             git push --force https://${GITHUB_TOKEN}@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.git main:gh-pages
 
