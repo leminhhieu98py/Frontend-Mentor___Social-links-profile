@@ -3,14 +3,14 @@
 @import "./core/presets.less";
 
 .primary-button {
-  height: 45px;
+  height: 2.8125rem;
   gap: @spacing-100;
   padding: @spacing-150;
   border-radius: @spacing-100;
   background-color: @grey-700;
   color: @white;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
   border: none;
 
   &:extend(.flex-center);
@@ -19,6 +19,10 @@
   &:hover {
     background-color: @green;
     color: @grey-700;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
   }
 }
 
@@ -30,7 +34,8 @@
 }
 
 .card {
-  width: 327px;
+  width: 100%;
+  max-width: 20.4375rem;
   gap: @spacing-300;
   padding: @spacing-300;
   border-radius: @spacing-150;
@@ -40,9 +45,11 @@
 }
 
 .card__avatar {
-  @edge: 88px;
-  width: @edge;
-  height: @edge;
+  @edge: 5.5rem;
+  width: 100%;
+  max-width: @edge;
+  height: 100%;
+  max-height: @edge;
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
@@ -70,9 +77,9 @@
   &:extend(.flex-column-center);
 }
 
-@media (min-width: 375px) {
+@media (min-width: 384px) {
   .card {
-    width: 384px;
+    width: 24rem;
     padding: @spacing-500;
   }
 }
